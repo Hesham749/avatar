@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, #070744 10%, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container {
+    background-image: linear-gradient(to right, #040436e5 40%, #0000009f),
+        url(bg.webp);
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+}
+.container:hover {
+    background-image: linear-gradient(to right, #040436e5 40%, #00000000),
+        url(bg.webp);
+}
+/* ----------------nav-------------------------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+nav ul li :hover{
+    border-bottom: 2px solid white;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.head {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+/* ---------------content----------------- */
+.content {
+    margin-top: 80px;
+    width: 50%;
+    margin-left: 5%;
+}
+.content h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 0.4em;
+}
+.content p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 1em;
+    letter-spacing: 2px;
+    width: 300px;
+}
+.content button {
+    padding: 10px;
+    width: 120px;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.content button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+
+}
